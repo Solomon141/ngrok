@@ -1,3 +1,6 @@
+require("dotenv").config();
+console.log(process.env)
+
 const express = require("express");
 const PORT = process.env.PORT || 4040;
 const { handler } = require("./controller")
