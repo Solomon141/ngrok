@@ -1,11 +1,11 @@
 const axios = require("axios");
 
 function getAxiosInstance(BASE_URL, headers = {
-  "content-type": "application/json",
+  'Content-Type': 'application/json',
 }) {
   return {
     get(method, params) {
-      return axios.get(`/{method}`, {
+      return axios.get(`/${method}`, {
         baseURL: BASE_URL,
         params,
         headers,

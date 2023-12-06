@@ -25,7 +25,7 @@ async function handleMessage(messageObj) {
 
   try {
     const chatId = messageObj.chat.id;
-    if(!messageText.charAt(0) === "/") {
+    if(messageText.charAt(0) === "/") {
         const command = messageText.substr(1);
         switch(command) {
             case "start":
