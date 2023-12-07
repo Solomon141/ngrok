@@ -1,5 +1,5 @@
 require("dotenv").config();
-console.log(process.env)
+// console.log(process.env)
 
 const express = require("express");
 const PORT = process.env.PORT || 4040;
@@ -16,9 +16,7 @@ app.post("*", async (req, res) => {
 
 app.get("*", async (req, res) => {
     res.send(await handler(req, "GET"));
-
 });
-
 
 app.listen(PORT, function(err) {
     if (err) {
